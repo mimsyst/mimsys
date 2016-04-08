@@ -1,0 +1,38 @@
+﻿<%@ Master Language="VB" CodeFile="Site.master.vb" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mimsys</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/StyleSheet.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>Copyright &copy; 2016 mimsys</p>
+                <!-- a 
+                <ul class="nav navbar-nav navbar-left">
+                    <li><asp:HyperLink ID="lnk_About" runat="server" Text="このサイトについて" NavigateUrl="~/about.aspx" /></li>
+                    <li><asp:HyperLink ID="lnk_Help" runat="server" Text="FAQ" NavigateUrl="~/help.aspx" /></li>
+                    <li><asp:HyperLink ID="lnkContact" runat="server" Text="お問い合わせ" NavigateUrl="~/contact.aspx" /></li>
+                    <li><asp:HyperLink ID="lnkStaff" runat="server" Text="開発者紹介" NavigateUrl="~/staff.aspx" /></li>
+                </ul>
+                    -->
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
